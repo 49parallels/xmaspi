@@ -1,0 +1,14 @@
+Started...
+Traceback (most recent call last):
+  File "yeelight_ctrl.py", line 73, in <module>
+    main()
+  File "yeelight_ctrl.py", line 46, in main
+    bulb.turn_off()
+  File "<decorator-gen-8>", line 2, in turn_off
+  File "/home/pi/.local/lib/python2.7/site-packages/yeelight/main.py", line 114, in _command
+    result = self.send_command(method, params).get("result", [])
+  File "/home/pi/.local/lib/python2.7/site-packages/yeelight/main.py", line 399, in send_command
+    raise_from(BulbException("A socket error occurred when sending the command."), ex)
+  File "/home/pi/.local/lib/python2.7/site-packages/future/utils/__init__.py", line 483, in raise_from
+    raise e
+yeelight.main.BulbException: A socket error occurred when sending the command.
